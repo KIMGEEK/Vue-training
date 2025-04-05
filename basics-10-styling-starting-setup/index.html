@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.global.min.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -17,9 +17,9 @@
       <h1>Vue Dynamic Styling</h1>
     </header>
     <section id="styling">
-      <div class="demo"></div>
-      <div class="demo"></div>
-      <div class="demo"></div>
+      <div class="demo" :style="border-color: red;" @click="boxSelected('A')"></div>
+      <div class="demo" :style="border-color: red;" @click="boxSelected('B')"></div>
+      <div class="demo" :style="border-color: red;" @click="boxSelected('C')"></div>
     </section>
   </body>
 </html>
