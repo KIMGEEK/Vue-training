@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 body {
@@ -33,4 +33,12 @@ header {
   height: 100px;
   margin: 16px;
   border: 2px dashed #ccc;
+}
+
+.active {
+  width: calc(100% - 32px);
+  height: 100px;
+  margin: 16px;
+  border-color: 2px dashed red;
+  background-color: salmon;
 }
